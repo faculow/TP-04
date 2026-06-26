@@ -1,8 +1,48 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<TP_04.Models.Figurita>
+
+<h1>Álbum del Mundial</h1>
+
+<p>
+Pegadas: @ViewBag.TotalPegadas / @ViewBag.TotalFiguritas
+</p>
+
+<a href='@Url.Action("AbrirSobre","Home")'>Abrir Sobre</a>
+
+<br />
+<br />
+
+<a href='@Url.Action("BaseFiguritas","Home")'>Base de Figuritas</a>
+
+<br />
+<br />
+
+<a href='@Url.Action("Repetidas","Home")'>Figuritas Repetidas</a>
+
+<hr>
+
+<table border="1">
+
+<tr>
+
+<th>N°</th>
+
+<th>Nombre</th>
+
+<th>Tipo</th>
+
+</tr>
+
+@foreach(var f in Model)
+{
+    <tr>
+
+        <td>@f.NumeroAlbum</td>
+
+        <td>@f.Nombre</td>
+
+        <td>@f.Tipo</td>
+
+    </tr>
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+</table>

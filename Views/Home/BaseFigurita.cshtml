@@ -1,0 +1,40 @@
+@model List<TP_04.Models.Figurita>
+
+<h1>Base de Figuritas</h1>
+
+<table border="1">
+
+<tr>
+
+<th>N°</th>
+
+<th>Nombre</th>
+
+<th>Tipo</th>
+
+<th>Posición</th>
+
+</tr>
+
+@foreach(var f in Model)
+{
+
+<tr>
+
+<td>@f.NumeroAlbum</td>
+
+<td>@f.Nombre</td>
+
+<td>@f.Tipo</td>
+
+<td>@f.PosicionJuego</td>
+
+</tr>
+
+}
+
+</table>
+
+<br>
+
+<a href='@Url.Action("Index","Home")'>Volver</a>

@@ -1,0 +1,36 @@
+@model List<TP_04.Models.Figurita>
+
+<h1>Abrir Sobre</h1>
+
+<form asp-action="Confirmar" method="post">
+
+@foreach(var f in Model)
+{
+    <hr>
+
+    <p>@f.Nombre</p>
+
+    <p>@f.Tipo</p>
+
+    <input type="checkbox"
+           name="pegar"
+           value="@f.IdFigurita">
+
+    Pegar
+
+    <br>
+
+    <input type="checkbox"
+           name="repetidas"
+           value="@f.IdFigurita">
+
+    Repetida
+
+    <br>
+}
+
+<br>
+
+<input type="submit" value="Confirmar">
+
+</form>
