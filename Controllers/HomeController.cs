@@ -8,6 +8,8 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
+    private readonly BD bd = new BD();
+
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
@@ -15,17 +17,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.TotalPegadas = BD.CantidadPegadas();
-        ViewBag.TotalFiguritas = BD.CantidadFiguritas();
+        ViewBag.TotalPegadas = bd.CantidadPegadas();
+        ViewBag.TotalFiguritas = bd.CantidadFiguritas();
 
-        List<Figurita> album = BD.ObtenerAlbum();
+        List<Figurita> album = bd.ObtenerAlbum();
 
         return View(album);
     }
 
     public IActionResult AbrirSobre()
     {
-        List<Figurita> sobre = BD.AbrirSobre();
+        List<Figurita> sobre = bd.AbrirSobre();
 
         return View(sobre);
     }
@@ -33,23 +35,23 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Confirmar(List<int> pegar, List<int> repetidas)
     {
-        BD.ConfirmarFiguritas(pegar, repetidas);
+        bd.ConfirmarFiguritas(pegar, repetidas);
 
         return RedirectToAction("Index");
     }
 
     public IActionResult BaseFiguritas()
     {
-        List<Figurita> lista = BD.ObtenerFiguritas();
+        List<Figurita> figuritas = bd.ObtenerFiguritas();
 
-        return View(lista);
+        return View(figuritas);
     }
 
     public IActionResult Repetidas()
     {
-        List<Figurita> lista = BD.ObtenerRepetidas();
+        List<Figurita> repetidas = bd.ObtenerRepetidas();
 
-        return View(lista);
+        return View(repetidas);
     }
 
     public IActionResult Privacy()

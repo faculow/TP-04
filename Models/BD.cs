@@ -1,49 +1,152 @@
-using System.Collections.Generic;
+using Dapper;
+using Microsoft.Data.SqlClient;
 
 namespace TP_04.Models
 {
-    public static class BD
+    public class BD
     {
-        public static List<Figurita> Album = new List<Figurita>();
+        private string _connectionString =
+            @"Server=localhost;Database=AlbumMundial;Trusted_Connection=True;TrustServerCertificate=True;";
 
-        public static List<Figurita> Repetidas = new List<Figurita>();
-
-        public static List<Figurita> Pendientes = new List<Figurita>();
-
-        public static List<Figurita> SobreActual = new List<Figurita>();
-
-        public static List<Figurita> ObtenerAlbum()
+        public List<Figurita> ObtenerFiguritas()
         {
-            return Album;
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"SELECT *
+                               FROM Figurita
+                               ORDER BY NumeroAlbum";
+
+                return db.Query<Figurita>(sql).ToList();
+            }
         }
 
-        public static List<Figurita> ObtenerRepetidas()
+        public List<Figurita> ObtenerAlbum()
         {
-            return Repetidas;
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"SELECT F.*
+                               FROM Figurita F
+                               INNER JOIN FiguritaPegada P
+                               ON F.IdFigurita = P.IdFigurita
+                               ORDER BY F.NumeroAlbum";
+
+                return db.Query<Figurita>(sql).ToList();
+            }
         }
 
-        public static List<Figurita> ObtenerPendientes()
+        public List<Figurita> AbrirSobre()
         {
-            return Pendientes;
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"SELECT TOP 7 *
+                               FROM Figurita
+                               ORDER BY NEWID()";
+
+                return db.Query<Figurita>(sql).ToList();
+            }
         }
 
-        public static List<Figurita> ObtenerSobreActual()
+        public int PegarFigurita(int idFigurita)
         {
-            return SobreActual;
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"INSERT INTO FiguritaPegada
+                               (IdFigurita)
+                               VALUES
+                               (@idFigurita)";
+
+                return db.Execute(sql, new
+                {
+                    idFigurita = idFigurita
+                });
+            }
         }
 
-        public static int CantidadPegadas()
+        public int AgregarRepetida(int idFigurita)
         {
-            return Album.Count;
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"INSERT INTO FiguritaRepetida
+                               (IdFigurita)
+                               VALUES
+                               (@idFigurita)";
+
+                return db.Execute(sql, new
+                {
+                    idFigurita = idFigurita
+                });
+            }
         }
 
-        public static int CantidadRepetidas()
+        public int AgregarPendiente(int idFigurita)
         {
-            return Repetidas.Count;
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"INSERT INTO FiguritaPendiente
+                               (IdFigurita)
+                               VALUES
+                               (@idFigurita)";
+
+                return db.Execute(sql, new
+                {
+                    idFigurita = idFigurita
+                });
+            }
         }
-        public static int CantidadFiguritas()
+
+        public List<Figurita> ObtenerRepetidas()
         {
-            return 64;
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"SELECT F.*
+                               FROM Figurita F
+                               INNER JOIN FiguritaRepetida R
+                               ON F.IdFigurita = R.IdFigurita
+                               ORDER BY F.NumeroAlbum";
+
+                return db.Query<Figurita>(sql).ToList();
+            }
+        }
+
+        public int CantidadPegadas()
+        {
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"SELECT COUNT(*)
+                               FROM FiguritaPegada";
+
+                return db.ExecuteScalar<int>(sql);
+            }
+        }
+
+        public int CantidadFiguritas()
+        {
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"SELECT COUNT(*)
+                               FROM Figurita";
+
+                return db.ExecuteScalar<int>(sql);
+            }
+        }
+
+        public void ConfirmarFiguritas(List<int> pegar, List<int> repetidas)
+        {
+            if (pegar != null)
+            {
+                foreach (int id in pegar)
+                {
+                    PegarFigurita(id);
+                }
+            }
+
+            if (repetidas != null)
+            {
+                foreach (int id in repetidas)
+                {
+                    AgregarRepetida(id);
+                }
+            }
         }
     }
 }

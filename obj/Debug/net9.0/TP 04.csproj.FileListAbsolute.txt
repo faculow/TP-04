@@ -1,0 +1,10 @@
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\rpswa.dswa.cache.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.GeneratedMSBuildEditorConfig.editorconfig
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.AssemblyInfoInputs.cache
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.AssemblyInfo.cs
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.csproj.CoreCompileInputs.cache
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.MvcApplicationPartsAssemblyInfo.cache
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.RazorAssemblyInfo.cache
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.RazorAssemblyInfo.cs
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.sourcelink.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.csproj.AssemblyReference.cache
