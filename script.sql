@@ -14,105 +14,113 @@ CREATE TABLE Pais
 CREATE TABLE Figurita
 (
     IdFigurita INT IDENTITY(1,1) PRIMARY KEY,
-    Nombre VARCHAR(100) NOT NULL,
-    Tipo VARCHAR(20) NOT NULL,
-    Imagen VARCHAR(100)
+    Imagen VARCHAR(150) NOT NULL,
+    IdJugador int,
     IdPais int
 );
+GO
 
+ALTER TABLE Figurita
+ADD CONSTRAINT FK_Figurita_Jugador
+FOREIGN KEY (IdJugador)
+REFERENCES Jugador(IdJugador);
+GO
+
+ALTER TABLE Figurita
+ADD CONSTRAINT FK_Figurita_Pais
+FOREIGN KEY (IdPais)
+REFERENCES Pais(IdPais);
+GO
+
+CREATE TABLE Jugador (
+    idJugador INT IDENTITY(1,1) PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellido VARCHAR(50) NOT NULL,
+    posicion VARCHAR(50) NOT NULL
+);
 
 INSERT INTO Pais (Nombre, CantFiguritas)
 VALUES
-('Argentina',8),
-('España',8),
-('Alemania',8),
-('Inglaterra',8),
-('Francia',8),
-('Uruguay',8),
-('Portugal',8),
-('Países Bajos',8);
+('Argentina',8), ('España',8), ('Alemania',8), ('Inglaterra',8),
+('Francia',8), ('Uruguay',8), ('Portugal',8), ('Países Bajos',8);
 
-INSERT INTO Figurita (Nombre, Tipo, NumeroAlbum, PosicionJuego, Imagen)
+SET IDENTITY_INSERT Jugador ON;
+INSERT INTO Jugador (idJugador, nombre, apellido, posicion) 
 VALUES
-('Escudo Argentina','Escudo',1,'-','escudo_argentina.png'),
-('Formacion Argentina','Formacion',2,'-','formacion_argentina.png'),
-('Emiliano Martinez','Jugador',3,'Arquero','emiliano_martinez.jpg'),
-('Cristian Romero','Jugador',4,'Defensor','cristian_romero.jpg'),
-('Enzo Fernandez','Jugador',5,'Mediocampista','enzo_fernandez.jpg'),
-('Rodrigo De Paul','Jugador',6,'Mediocampista','de_paul.jpg'),
-('Julian Alvarez','Jugador',7,'Delantero','julian_alvarez.jpg'),
-('Lionel Messi','Jugador',8,'Delantero','messi.jpg'),
+-- Argentina
+(1,'Emiliano', 'Martínez', 'Arquero'),
+(2,'Cristian', 'Romero', 'Defensor'),
+(3,'Nicolás', 'Otamendi', 'Defensor'),
+(4,'Rodrigo', 'De Paul', 'Mediocampista'),
+(5,'Alexis', 'Mac Allister', 'Mediocampista'),
+(6,'Lionel', 'Messi', 'Delantero'),
+-- España
+(7, 'Unai', 'Simón', 'Arquero'),
+(8, 'Robin', 'Le Normand', 'Defensor'),
+(9, 'Rodrigo', 'Hernández', 'Mediocampista'),
+(10, 'Pedro', 'González', 'Mediocampista'),
+(11, 'Lamine', 'Yamal', 'Delantero'),
+(12, 'Álvaro', 'Morata', 'Delantero'),
+-- Alemania
+(13, 'Manuel', 'Neuer', 'Arquero'),
+(14, 'Antonio', 'Rüdiger', 'Defensor'),
+(15, 'Joshua', 'Kimmich', 'Mediocampista'),
+(16, 'Florian', 'Wirtz', 'Mediocampista'),
+(17, 'Jamal', 'Musiala', 'Mediocampista'),
+(18, 'Kai', 'Havertz', 'Delantero'),
+-- Inglaterra
+(19, 'Jordan', 'Pickford', 'Arquero'),
+(20, 'John', 'Stones', 'Defensor'),
+(21, 'Declan', 'Rice', 'Mediocampista'),
+(22, 'Jude', 'Bellingham', 'Mediocampista'),
+(23, 'Bukayo', 'Saka', 'Delantero'),
+(24, 'Harry', 'Kane', 'Delantero'),
+-- Francia
+(25, 'Mike', 'Maignan', 'Arquero'),
+(26, 'William', 'Saliba', 'Defensor'),
+(27, 'Aurélien', 'Tchouaméni', 'Mediocampista'),
+(28, 'Adrien', 'Rabiot', 'Mediocampista'),
+(29, 'Ousmane', 'Dembélé', 'Delantero'),
+(30, 'Kylian', 'Mbappé', 'Delantero'),
+-- Uruguay
+(31, 'Sergio', 'Rochet', 'Arquero'),
+(32, 'Ronald', 'Araújo', 'Defensor'),
+(33, 'Federico', 'Valverde', 'Mediocampista'),
+(34, 'Manuel', 'Ugarte', 'Mediocampista'),
+(35, 'Darwin', 'Núñez', 'Delantero'),
+(36, 'Luis', 'Suárez', 'Delantero'),
+-- Portugal
+(37, 'Diogo', 'Costa', 'Arquero'),
+(38, 'Rúben', 'Dias', 'Defensor'),
+(39, 'Bruno', 'Fernandes', 'Mediocampista'),
+(40, 'Vitinha', 'Santos', 'Mediocampista'),
+(41, 'Rafael', 'Leão', 'Delantero'),
+(42, 'Cristiano', 'Ronaldo', 'Delantero'),
+-- Países Bajos
+(43, 'Bart', 'Verbruggen', 'Arquero'),
+(44, 'Virgil', 'van Dijk', 'Defensor'),
+(45, 'Frenkie', 'de Jong', 'Mediocampista'),
+(46, 'Tijjani', 'Reijnders', 'Mediocampista'),
+(47, 'Xavi', 'Simons', 'Mediocampista'),
+(48, 'Cody', 'Gakpo', 'Delantero');
 
-('Escudo España','Escudo',9,'-','escudo_espana.png'),
-('Formacion España','Formacion',10,'-','formacion_espana.png'),
-('Unai Simon','Jugador',11,'Arquero','unai_simon.jpg'),
-('Robin Le Normand','Jugador',12,'Defensor','le_normand.jpg'),
-('Rodri','Jugador',13,'Mediocampista','rodri.jpg'),
-('Pedri','Jugador',14,'Mediocampista','pedri.jpg'),
-('Lamine Yamal','Jugador',15,'Delantero','lamine_yamal.jpg'),
-('Alvaro Morata','Jugador',16,'Delantero','morata.jpg'),
+SET IDENTITY_INSERT Jugador OFF;
 
-('Escudo Alemania','Escudo',17,'-','escudo_alemania.png'),
-('Formacion Alemania','Formacion',18,'-','formacion_alemania.png'),
-('Manuel Neuer','Jugador',19,'Arquero','neuer.jpg'),
-('Antonio Rudiger','Jugador',20,'Defensor','rudiger.jpg'),
-('Joshua Kimmich','Jugador',21,'Mediocampista','kimmich.jpg'),
-('Florian Wirtz','Jugador',22,'Mediocampista','wirtz.jpg'),
-('Jamal Musiala','Jugador',23,'Delantero','musiala.jpg'),
-('Kai Havertz','Jugador',24,'Delantero','havertz.jpg'),
-
-('Escudo Inglaterra','Escudo',25,'-','escudo_inglaterra.png'),
-('Formacion Inglaterra','Formacion',26,'-','formacion_inglaterra.png'),
-('Jordan Pickford','Jugador',27,'Arquero','pickford.jpg'),
-('John Stones','Jugador',28,'Defensor','stones.jpg'),
-('Declan Rice','Jugador',29,'Mediocampista','rice.jpg'),
-('Jude Bellingham','Jugador',30,'Mediocampista','bellingham.jpg'),
-('Bukayo Saka','Jugador',31,'Delantero','saka.jpg'),
-('Harry Kane','Jugador',32,'Delantero','kane.jpg'),
-
-('Escudo Francia','Escudo',33,'-','escudo_francia.png'),
-('Formacion Francia','Formacion',34,'-','formacion_francia.png'),
-('Mike Maignan','Jugador',35,'Arquero','maignan.jpg'),
-('William Saliba','Jugador',36,'Defensor','saliba.jpg'),
-('Aurelien Tchouameni','Jugador',37,'Mediocampista','tchouameni.jpg'),
-('Adrien Rabiot','Jugador',38,'Mediocampista','rabiot.jpg'),
-('Ousmane Dembele','Jugador',39,'Delantero','dembele.jpg'),
-('Kylian Mbappe','Jugador',40,'Delantero','mbappe.jpg'),
-
-('Escudo Uruguay','Escudo',41,'-','escudo_uruguay.png'),
-('Formacion Uruguay','Formacion',42,'-','formacion_uruguay.png'),
-('Sergio Rochet','Jugador',43,'Arquero','rochet.jpg'),
-('Ronald Araujo','Jugador',44,'Defensor','araujo.jpg'),
-('Federico Valverde','Jugador',45,'Mediocampista','valverde.jpg'),
-('Manuel Ugarte','Jugador',46,'Mediocampista','ugarte.jpg'),
-('Darwin Nunez','Jugador',47,'Delantero','darwin.jpg'),
-('Luis Suarez','Jugador',48,'Delantero','suarez.jpg'),
-
-('Escudo Portugal','Escudo',49,'-','escudo_portugal.png'),
-('Formacion Portugal','Formacion',50,'-','formacion_portugal.png'),
-('Diogo Costa','Jugador',51,'Arquero','diogo_costa.jpg'),
-('Ruben Dias','Jugador',52,'Defensor','ruben_dias.jpg'),
-('Bruno Fernandes','Jugador',53,'Mediocampista','bruno_fernandes.jpg'),
-('Vitinha','Jugador',54,'Mediocampista','vitinha.jpg'),
-('Rafael Leao','Jugador',55,'Delantero','rafael_leao.jpg'),
-('Cristiano Ronaldo','Jugador',56,'Delantero','cristiano_ronaldo.jpg'),
-
-('Escudo Paises Bajos','Escudo',57,'-','escudo_paises_bajos.png'),
-('Formacion Paises Bajos','Formacion',58,'-','formacion_paises_bajos.png'),
-('Bart Verbruggen','Jugador',59,'Arquero','verbruggen.jpg'),
-('Virgil van Dijk','Jugador',60,'Defensor','vandijk.jpg'),
-('Frenkie de Jong','Jugador',61,'Mediocampista','dejong.jpg'),
-('Tijjani Reijnders','Jugador',62,'Mediocampista','reijnders.jpg'),
-('Xavi Simons','Jugador',63,'Delantero','xavi_simons.jpg'),
-('Cody Gakpo','Jugador',64,'Delantero','gakpo.jpg');
-
-INSERT INTO FiguritaXPais
+INSERT INTO Figurita (Imagen, IdJugador, IdPais)
 VALUES
-(1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1),
-(9,2),(10,2),(11,2),(12,2),(13,2),(14,2),(15,2),(16,2),
-(17,3),(18,3),(19,3),(20,3),(21,3),(22,3),(23,3),(24,3),
-(25,4),(26,4),(27,4),(28,4),(29,4),(30,4),(31,4),(32,4),
-(33,5),(34,5),(35,5),(36,5),(37,5),(38,5),(39,5),(40,5),
-(41,6),(42,6),(43,6),(44,6),(45,6),(46,6),(47,6),(48,6),
-(49,7),(50,7),(51,7),(52,7),(53,7),(54,7),(55,7),(56,7),
-(57,8),(58,8),(59,8),(60,8),(61,8),(62,8),(63,8),(64,8);
+-- Argentina
+('emiliano_martinez.jpg',1,1), ('cristian_romero.jpg',2,1), ('otamendi.jpg',3,1), ('de_paul.jpg',4,1), ('mac_allister.jpg',5,1), ('messi.jpg',6,1),
+-- España
+('unai_simon.jpg',7,2), ('le_normand.jpg',8,2), ('rodri.jpg',9,2), ('pedri.jpg',10,2), ('lamine_yamal.jpg',11,2), ('morata.jpg',12,2),
+-- Alemania
+('neuer.jpg',13,3), ('rudiger.jpg',14,3), ('kimmich.jpg',15,3), ('wirtz.jpg',16,3), ('musiala.jpg',17,3), ('havertz.jpg',18,3),
+-- Inglaterra
+('pickford.jpg',19,4), ('stones.jpg',20,4), ('rice.jpg',21,4), ('bellingham.jpg',22,4), ('saka.jpg',23,4), ('kane.jpg',24,4),
+-- Francia
+('maignan.jpg',25,5), ('saliba.jpg',26,5), ('tchouameni.jpg',27,5), ('rabiot.jpg',28,5), ('dembele.jpg',29,5), ('mbappe.jpg',30,5),
+-- Uruguay
+('rochet.jpg',31,6), ('araujo.jpg',32,6), ('valverde.jpg',33,6), ('ugarte.jpg',34,6), ('darwin.jpg',35,6), ('suarez.jpg',36,6),
+-- Portugal
+('diogo_costa.jpg',37,7), ('ruben_dias.jpg',38,7), ('bruno_fernandes.jpg',39,7), ('vitinha.jpg',40,7), ('rafael_leao.jpg',41,7), ('cristiano_ronaldo.jpg',42,7),
+-- Países Bajos
+('verbruggen.jpg',43,8), ('vandijk.jpg',44,8), ('dejong.jpg',45,8), ('reijnders.jpg',46,8), ('xavi_simons.jpg',47,8), ('gakpo.jpg',48,8);
