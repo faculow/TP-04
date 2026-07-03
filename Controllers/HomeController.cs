@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using TP_04.Models;
 
@@ -8,8 +9,6 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    private readonly BD bd = new BD();
-
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
@@ -17,17 +16,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.TotalPegadas = bd.CantidadPegadas();
-        ViewBag.TotalFiguritas = bd.CantidadFiguritas();
+        ViewBag.TotalPegadas = BD.CantidadPegadas();
+        ViewBag.TotalFiguritas = BD.CantidadFiguritas();
 
-        List<Figurita> album = bd.ObtenerAlbum();
+        List<Figurita> album = BD.ObtenerAlbum();
 
         return View(album);
     }
 
     public IActionResult AbrirSobre()
     {
-        List<Figurita> sobre = bd.AbrirSobre();
+        List<Figurita> sobre = BD.AbrirSobre();
 
         return View(sobre);
     }
@@ -35,21 +34,21 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Confirmar(List<int> pegar, List<int> repetidas)
     {
-        bd.ConfirmarFiguritas(pegar, repetidas);
+        BD.ConfirmarFiguritas(pegar, repetidas);
 
         return RedirectToAction("Index");
     }
 
     public IActionResult BaseFiguritas()
     {
-        List<Figurita> figuritas = bd.ObtenerFiguritas();
+        List<Figurita> figuritas = BD.ObtenerFiguritas();
 
         return View(figuritas);
     }
 
     public IActionResult Repetidas()
     {
-        List<Figurita> repetidas = bd.ObtenerRepetidas();
+        List<Figurita> repetidas = BD.ObtenerRepetidas();
 
         return View(repetidas);
     }
