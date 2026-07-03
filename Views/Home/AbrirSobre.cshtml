@@ -1,36 +1,48 @@
-@model List<TP_04.Models.Figurita>
+@{
+    ViewData["Title"] = "Abrir Sobre";
+}
 
 <h1>Abrir Sobre</h1>
 
 <form asp-action="Confirmar" method="post">
 
-@foreach(var f in Model)
+<div class="row">
+
+@foreach(var f in ViewBag.Sobre)
 {
-    <hr>
+    <div class="col-md-4">
 
-    <p>@f.Nombre</p>
+        <div class="card mb-3">
 
-    <p>@f.Tipo</p>
+            <img src="~/images/@f.Imagen" class="card-img-top">
 
-    <input type="checkbox"
-           name="pegar"
-           value="@f.IdFigurita">
+            <div class="card-body">
 
-    Pegar
+                <h5>@f.Nombre</h5>
 
-    <br>
+                <input type="checkbox"
+                       name="pegar"
+                       value="@f.IdFigurita">
+                Pegar
 
-    <input type="checkbox"
-           name="repetidas"
-           value="@f.IdFigurita">
+                <br>
 
-    Repetida
+                <input type="checkbox"
+                       name="repetidas"
+                       value="@f.IdFigurita">
+                Repetida
 
-    <br>
+            </div>
+
+        </div>
+
+    </div>
 }
 
-<br>
+</div>
 
-<input type="submit" value="Confirmar">
+<input type="submit"
+       class="btn btn-success"
+       value="Confirmar">
 
 </form>

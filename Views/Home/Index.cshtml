@@ -1,48 +1,44 @@
-﻿@model List<TP_04.Models.Figurita>
+﻿@{
+    ViewData["Title"] = "Álbum del Mundial";
+}
 
 <h1>Álbum del Mundial</h1>
 
 <p>
-Pegadas: @ViewBag.TotalPegadas / @ViewBag.TotalFiguritas
+    Figuritas pegadas: @ViewBag.TotalPegadas / @ViewBag.TotalFiguritas
 </p>
 
-<a href='@Url.Action("AbrirSobre","Home")'>Abrir Sobre</a>
-
-<br />
-<br />
-
-<a href='@Url.Action("BaseFiguritas","Home")'>Base de Figuritas</a>
-
-<br />
-<br />
-
-<a href='@Url.Action("Repetidas","Home")'>Figuritas Repetidas</a>
+<a class="btn btn-primary" asp-action="AbrirSobre">Abrir Sobre</a>
+<a class="btn btn-success" asp-action="BaseFiguritas">Base de Figuritas</a>
+<a class="btn btn-warning" asp-action="Repetidas">Repetidas</a>
 
 <hr>
 
-<table border="1">
+<div class="row">
 
-<tr>
-
-<th>N°</th>
-
-<th>Nombre</th>
-
-<th>Tipo</th>
-
-</tr>
-
-@foreach(var f in Model)
+@foreach(var f in ViewBag.Figuritas)
 {
-    <tr>
+    <div class="col-md-3">
 
-        <td>@f.NumeroAlbum</td>
+        <div class="card mb-3">
 
-        <td>@f.Nombre</td>
+            <img src="~/images/@f.Imagen" class="card-img-top">
 
-        <td>@f.Tipo</td>
+            <div class="card-body">
 
-    </tr>
+                <h5>@f.Nombre</h5>
+
+                <p>Id Figurita: @f.IdFigurita</p>
+
+                <p>Jugador: @f.IdJugador</p>
+
+                <p>País: @f.IdPais</p>
+
+            </div>
+
+        </div>
+
+    </div>
 }
 
-</table>
+</div>

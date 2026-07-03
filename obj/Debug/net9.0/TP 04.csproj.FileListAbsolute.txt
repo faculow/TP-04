@@ -8,3 +8,145 @@ Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.RazorAssemblyInfo.cache
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.RazorAssemblyInfo.cs
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.sourcelink.json
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.csproj.AssemblyReference.cache
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\appsettings.Development.json
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\appsettings.json
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\TP 04.staticwebassets.runtime.json
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\TP 04.staticwebassets.endpoints.json
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\TP 04.exe
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\TP 04.deps.json
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\TP 04.runtimeconfig.json
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\TP 04.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\TP 04.pdb
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Dapper.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Bcl.Cryptography.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\System.Diagnostics.EventLog.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\cs\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\de\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\es\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\fr\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\it\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\ja\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\ko\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\pl\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\ru\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\tr\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+c:\Users\49961065\Downloads\TP04\TP-04\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.csproj.AssemblyReference.cache
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\rpswa.dswa.cache.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.AssemblyInfoInputs.cache
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.AssemblyInfo.cs
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.csproj.CoreCompileInputs.cache
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.RazorAssemblyInfo.cache
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.RazorAssemblyInfo.cs
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.sourcelink.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\rjimswa.dswa.cache.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\scopedcss\bundle\TP 04.styles.css
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\scopedcss\projectbundle\TP 04.bundle.scp.css
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\rtne5oafxk-b9sayid5wm.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\52r49jjt5v-61n19gt1b8.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\sourx506zx-3u8phryvc0.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\k6azbtl0pr-t1cqhe9u97.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\byaf7l8xhz-c2jlpeoesf.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\8xdbqu75jn-sejl45xvog.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\vgbiw1nwki-aexeepp0ev.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\uwmp2tkyoj-xvp3kq03qx.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\r0ectpw6bm-ausgxo2sd3.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\vch2284q8s-22vffe00uq.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\8gx5besz41-cosvhxvwiu.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\qapmveolkf-qesaa3a1fm.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\9698b0e1mz-fvhpjtyr6v.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\046pouod8e-tmc1g35s3z.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\axk45libse-fsbi9cje9m.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\gwmu6c6kzw-rxsg74s51o.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\fde1hsi38i-ee0r1s7dh0.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\spjjr5lrzr-q9ht133ko3.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\s5477cyuol-jd9uben2k1.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\rolqxkwgyb-gye83jo8yx.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\njs9mmikmz-r4e9w2rdcm.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\1s44dcpn2p-wl58j5mj3v.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\s8z7diii6z-c2oey78nd0.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\kgznu79jin-d4r6k3f320.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\npns8p0ecd-j5mq2jizvt.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\y13nuf8l7i-keugtjm085.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\jcn91c3nut-nvvlpmu67g.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\llw400cc95-zub09dkrxp.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\adscukb6xl-pj5nd1wqec.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\7qxaf8yyes-43atpzeawx.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\06nt0j484z-v0zj4ognzu.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\b8h8abnz5u-ynyaa8k90p.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\gsepvcwhew-hrwsygsryq.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\rxamsm0lpv-c63t5i9ira.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\qcr2q1nxic-ft3s53vfgj.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\dgomp9go87-4094rpi4f9.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\y90t3wuqti-6pdc2jztkx.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\xe2kurp0v5-hd3gran6i8.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\8vzto8092a-iovd86k7lj.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\d1t0up24ul-ltid2c489k.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\yoivozclr4-kbrnm935zg.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\c1huw0meja-8vyfqsqgz1.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\woqtt6war5-y7v9cxd14o.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\t7ivq142e9-u9q1upor1n.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\xmqvd9pl5y-h1s4sie4z3.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\ypmwhkvqn9-4d85u1mtcx.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\p1u4fmytzk-0j3bgjxly4.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\4914vdv2ia-03hjc8e09r.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\z9oo7xtkzb-48y08845bh.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\gkoyjwdovb-356vix0kms.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\bsvkd00n21-83jwlth58m.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\w4qd2worrt-mrlpezrjn3.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\dufa2m2qca-worgj0nhwm.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\8wc5bq9mre-gk0pw8i4co.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\h7e5udrv4h-x0q3zqp4vz.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\jipysvs374-d6nrnj6jjx.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\y0om1xovbq-m9qm4tazc0.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\fui50phxn7-ttgo8qnofa.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\wklajgwm63-jjsuc0puko.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\ceghvgjyzg-9vr69e8ynj.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\fv2167lq9o-87fc7y1x7t.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\xtzi7xmn8j-mlv21k5csn.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\qf0z6vck54-zg03wvcyto.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\compressed\7nw5s7flqi-zg03wvcyto.gz
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\staticwebassets.build.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\staticwebassets.build.json.cache
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\staticwebassets.development.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.csproj.Up2Date
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.dll
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\refint\TP 04.dll
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.pdb
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.genruntimeconfig.cache
+c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\ref\TP 04.dll

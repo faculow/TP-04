@@ -1,37 +1,39 @@
 @model List<TP_04.Models.Figurita>
 
+@{
+    ViewData["Title"] = "Repetidas";
+}
+
 <h1>Figuritas Repetidas</h1>
 
-@if(Model.Count == 0)
+@if(ViewBag.Repetidas.Count == 0)
 {
     <p>No hay figuritas repetidas.</p>
 }
 else
 {
-    <table border="1">
+    <div class="row">
 
-    <tr>
-
-        <th>Nombre</th>
-
-        <th>Tipo</th>
-
-    </tr>
-
-    @foreach(var f in Model)
+    @foreach(var f in ViewBag.Repetidas)
     {
-        <tr>
+        <div class="col-md-3">
 
-            <td>@f.Nombre</td>
+            <div class="card mb-3">
 
-            <td>@f.Tipo</td>
+                <img src="~/images/@f.Imagen" class="card-img-top">
 
-        </tr>
+                <div class="card-body">
+
+                    <h5>@f.Nombre</h5>
+
+                </div>
+
+            </div>
+
+        </div>
     }
 
-    </table>
+    </div>
 }
 
-<br>
-
-<a href='@Url.Action("Index","Home")'>Volver</a>
+<a asp-action="Index" class="btn btn-secondary">Volver</a>

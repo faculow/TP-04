@@ -1,40 +1,36 @@
-@model List<TP_04.Models.Figurita>
+@{
+    ViewData["Title"] = "Base de Figuritas";
+}
 
 <h1>Base de Figuritas</h1>
 
-<table border="1">
+<table class="table table-striped">
 
 <tr>
 
-<th>N°</th>
-
+<th>ID</th>
 <th>Nombre</th>
-
-<th>Tipo</th>
-
-<th>Posición</th>
+<th>Imagen</th>
 
 </tr>
 
-@foreach(var f in Model)
+@foreach(var f in ViewBag.Figuritas)
 {
-
 <tr>
 
-<td>@f.NumeroAlbum</td>
+<td>@f.IdFigurita</td>
 
 <td>@f.Nombre</td>
 
-<td>@f.Tipo</td>
+<td>
 
-<td>@f.PosicionJuego</td>
+<img src="~/images/@f.Imagen" width="80">
+
+</td>
 
 </tr>
-
 }
 
 </table>
 
-<br>
-
-<a href='@Url.Action("Index","Home")'>Volver</a>
+<a asp-action="Index" class="btn btn-secondary">Volver</a>
