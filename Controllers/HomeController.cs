@@ -49,7 +49,7 @@ public class HomeController : Controller
     public IActionResult Repetidas()
     {
         List<Figurita> repetidas = BD.ObtenerRepetidas();
-
+        ViewBag.TotalRepetidas = repetidas.Sum(r => (int)r.cantidad);
         return View(repetidas);
     }
 

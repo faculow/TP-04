@@ -150,3 +150,6 @@ c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\refint\TP 04.dll
 c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.pdb
 c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\TP 04.genruntimeconfig.cache
 c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\ref\TP 04.dll
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.dll
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\refint\TP 04.dll
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.pdb

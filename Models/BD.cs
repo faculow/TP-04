@@ -3,7 +3,7 @@ using Microsoft.Data.SqlClient;
 
 public static class BD
 {
-    private string_connectionString = @"Server=localhost; Database=album; Integrated Security=True; TrustServerCertificate=True;";
+    private string_connectionString = @"Server=localhost; Database=AlbumMundial; Integrated Security=True; TrustServerCertificate=True;";
 
     public static List<int> AbrirSobre()
     {
