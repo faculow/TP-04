@@ -117,20 +117,20 @@ SET IDENTITY_INSERT Figurita ON;
 INSERT INTO Figurita (IdFigurita, Imagen, IdJugador, IdPais, Pegada)
 VALUES
 -- Argentina
-(1, 'emiliano_martinez.jpg', 1, 1, 0), (2, 'cristian_romero.jpg', 2, 1, 0), (3, 'otamendi.jpg', 3, 1, 0), (4, 'de_paul.jpg', 4, 1, 0), (5, 'mac_allister.jpg', 5, 1, 0), (6, 'messi.jpg', 6, 1, 0),
+(1, 'emiliano-martinez.jpg', 1, 1, 0), (2, 'cristian_romero.jpg.png', 2, 1, 0), (3, 'Nicolas-Otamendi.jpg', 3, 1, 0), (4, 'Rodrigo-de-Paul.jpg', 4, 1, 0), (5, 'Alexis-Mac-Allister.jpg', 5, 1, 0), (6, 'Lionel-Messi.jpg', 6, 1, 0),
 -- España
-(7, 'unai_simon.jpg', 7, 2, 0), (8, 'le_normand.jpg', 8, 2, 0), (9, 'rodri.jpg', 9, 2, 0), (10, 'pedri.jpg', 10, 2, 0), (11, 'lamine_yamal.jpg', 11, 2, 0), (12, 'oyarzabal.jpg', 12, 2, 0),
+(7, 'Unai-Simon.jpg', 7, 2, 0), (8, 'Robin-Le-Normand.jpg', 8, 2, 0), (9, 'rodri.jpg', 9, 2, 0), (10, 'Pedri.jpg', 10, 2, 0), (11, 'Lamine-Yamal.jpg', 11, 2, 0), (12, 'Mikel-Oyarzabal.jpg', 12, 2, 0),
 -- Alemania
-(13, 'neuer.jpg', 13, 3, 0), (14, 'rudiger.jpg', 14, 3, 0), (15, 'kimmich.jpg', 15, 3, 0), (16, 'wirtz.jpg', 16, 3, 0), (17, 'musiala.jpg', 17, 3, 0), (18, 'havertz.jpg', 18, 3, 0),
+(13, 'Manuel-Neuer.jpg', 13, 3, 0), (14, 'Antonio-Rudiger.jpg', 14, 3, 0), (15, 'Joshua-Kimmich.jpg', 15, 3, 0), (16, 'Florian-Wirtz.jpg', 16, 3, 0), (17, 'Jamal-Musiala.jpg', 17, 3, 0), (18, 'Kai-Havertz.jpg', 18, 3, 0),
 -- Inglaterra
-(19, 'pickford.jpg', 19, 4, 0), (20, 'guehi.jpg', 20, 4, 0), (21, 'rice.jpg', 21, 4, 0), (22, 'bellingham.jpg', 22, 4, 0), (23, 'saka.jpg', 23, 4, 0), (24, 'kane.jpg', 24, 4, 0),
+(19, 'Jordan-Pickford.jpg', 19, 4, 0), (20, 'Marc-Guehi.jpg', 20, 4, 0), (21, 'Declan-Rice.jpg', 21, 4, 0), (22, 'Jude-Bellingham.jpg', 22, 4, 0), (23, 'Bukayo-Saka.jpg', 23, 4, 0), (24, 'Harry-Kane.jpg', 24, 4, 0),
 -- Francia
-(25, 'maignan.jpg', 25, 5, 0), (26, 'saliba.jpg', 26, 5, 0), (27, 'tchouameni.jpg', 27, 5, 0), (28, 'rabiot.jpg', 28, 5, 0), (29, 'dembele.jpg', 29, 5, 0), (30, 'mbappe.jpg', 30, 5, 0),
+(25, 'Mike-Maignan.jpg', 25, 5, 0), (26, 'William-Saliba.jpg', 26, 5, 0), (27, 'Aurelien-Tchouameni.jpg', 27, 5, 0), (28, 'Adrien-Rabiot.jpg', 28, 5, 0), (29, 'Ousmane-Dembele.jpg', 29, 5, 0), (30, 'Kylian-Mbappe.jpg', 30, 5, 0),
 -- Uruguay
-(31, 'rochet.jpg', 31, 6, 0), (32, 'araujo.jpg', 32, 6, 0), (33, 'valverde.jpg', 33, 6, 0), (34, 'ugarte.jpg', 34, 6, 0), (35, 'darwin.jpg', 35, 6, 0), (36, 'nandez.jpg', 36, 6, 0),
+(31, 'Sergio-Rochet.jpg', 31, 6, 0), (32, 'Ronald-Araujo.jpg', 32, 6, 0), (33, 'Federico-Valverde.jpg', 33, 6, 0), (34, 'Manuel-Ugarte.jpg', 34, 6, 0), (35, 'Darwin-Nuñez.jpg', 35, 6, 0), (36, 'Nahitan-Nandez.jpg', 36, 6, 0),
 -- Portugal
-(37, 'diogo_costa.jpg', 37, 7, 0), (38, 'ruben_dias.jpg', 38, 7, 0), (39, 'bruno_fernandes.jpg', 39, 7, 0), (40, 'vitinha.jpg', 40, 7, 0), (41, 'rafael_leao.jpg', 41, 7, 0), (42, 'cristiano_ronaldo.jpg', 42, 7, 0),
+(37, 'Diogo-Costa.jpg', 37, 7, 0), (38, 'Ruben-Dias.jpg', 38, 7, 0), (39, 'Bruno_Fernandes.jpg', 39, 7, 0), (40, 'vitinha.jpg', 40, 7, 0), (41, 'Rafael-Leao.jpg', 41, 7, 0), (42, 'Cristiano-Ronaldo.jpg', 42, 7, 0),
 -- Países Bajos
-(43, 'verbruggen.jpg', 43, 8, 0), (44, 'vandijk.jpg', 44, 8, 0), (45, 'dejong.jpg', 45, 8, 0), (46, 'reijnders.jpg', 46, 8, 0), (47, 'xavi_simons.jpg', 47, 8, 0), (48, 'gakpo.jpg', 48, 8, 0);
+(43, 'Bart-Verbruggen.jpg', 43, 8, 0), (44, 'Virgil-Van-Dijk.jpg', 44, 8, 0), (45, 'Frankie-De-Jong.jpg', 45, 8, 0), (46, 'Tijjani-Reijnders.jpg', 46, 8, 0), (47, 'Xavi-Simons.jpg', 47, 8, 0), (48, 'Cody-Gakpo.jpg', 48, 8, 0);
 SET IDENTITY_INSERT Figurita OFF;
 GO

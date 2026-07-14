@@ -29,3 +29,43 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* Contenedor principal de las figuritas */
+.layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Diseño de cada tarjetita de figurita */
+.figurita-card {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.figurita-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los textos de estado */
+.estado {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+}
+.pegada {
+    background-color: #d4edda;
+    color: #155724;
+}
+.falta {
+    background-color: #f8d7da;
+    color: #721c24;
+}
