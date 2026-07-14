@@ -1,31 +1,92 @@
 using Dapper;
 using Microsoft.Data.SqlClient;
 
-public static class BD
+namespace TP_04.Models
 {
-    private string_connectionString = @"Server=localhost; Database=AlbumMundial; Integrated Security=True; TrustServerCertificate=True;";
-
-    public static List<int> AbrirSobre()
+    public static class BD
     {
-        List<int> sobre = new List<int>();
-        SqlDataAdapter adaptador = new SqlDataAdapter("SELECT TOP 5 IdFigurita FROM Figurita ORDER BY NEWID()", conexion);
-        DataTable tabla = new DataTable();
-        adaptador.Fill(tabla);
-        for (int i = 0; i < tabla.Rows.Count; i++)
+        private static string _connectionString = @"Server=localhost;Database=AlbumMundial;Integrated Security=True;TrustServerCertificate=True;";
+
+        public static List<Figurita> AbrirSobre()
         {
-            int numero = Convert.ToInt32(tabla.Rows[i]["IdFigurita"]);
-            sobre.Add(numero);
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"
+                SELECT TOP 5
+                    F.IdFigurita,
+                    F.Imagen,
+                    F.IdJugador,
+                    F.IdPais,
+                    F.Pegada,
+                    J.Nombre,
+                    J.Apellido,
+                    J.Posicion,
+                    P.Nombre AS Pais
+                FROM Figurita F
+                INNER JOIN Jugador J ON F.IdJugador = J.IdJugador
+                INNER JOIN Pais P ON F.IdPais = P.IdPais
+                ORDER BY NEWID();";
+
+                return db.Query<Figurita>(sql).ToList();
+            }
         }
-        return sobre;
-    }
 
-    public static void GuardarFigurita(int id)
-    {
-        Console.WriteLine("Figurita guardada: " + id);
-    }
+        public static List<Figurita> ObtenerAlbum()
+        {
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"
+                SELECT
+                    F.IdFigurita,
+                    F.Imagen,
+                    F.IdJugador,
+                    F.IdPais,
+                    F.Pegada,
+                    J.Nombre,
+                    J.Apellido,
+                    J.Posicion,
+                    P.Nombre AS Pais
+                FROM Figurita F
+                INNER JOIN Jugador J ON F.IdJugador = J.IdJugador
+                INNER JOIN Pais P ON F.IdPais = P.IdPais
+                ORDER BY F.IdFigurita;";
 
-    public static void PegarFigurita(int id)
-    {
-        Console.WriteLine("Figurita pegada: " + id);
+                return db.Query<Figurita>(sql).ToList();
+            }
+        }
+
+        public static void PegarFigurita(int id)
+        {
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"UPDATE Figurita
+                               SET Pegada = 1
+                               WHERE IdFigurita = @id;";
+
+                db.Execute(sql, new { id });
+            }
+        }
+
+        public static void GuardarFigurita(int id)
+        {
+        }
+
+        public static int CantidadPegadas()
+        {
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                return db.ExecuteScalar<int>(
+                    "SELECT COUNT(*) FROM Figurita WHERE Pegada = 1");
+            }
+        }
+
+        public static int CantidadFiguritas()
+        {
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                return db.ExecuteScalar<int>(
+                    "SELECT COUNT(*) FROM Figurita");
+            }
+        }
     }
 }

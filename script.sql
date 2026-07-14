@@ -27,7 +27,7 @@ CREATE TABLE Figurita
     Imagen VARCHAR(150) NOT NULL,
     IdJugador INT,
     IdPais INT,
-    Pegada BIT NULL
+    Pegada BIT NOT NULL
 );
 GO
 
@@ -117,20 +117,20 @@ SET IDENTITY_INSERT Figurita ON;
 INSERT INTO Figurita (IdFigurita, Imagen, IdJugador, IdPais, Pegada)
 VALUES
 -- Argentina
-(1, 'emiliano_martinez.jpg', 1, 1, NULL), (2, 'cristian_romero.jpg', 2, 1, NULL), (3, 'otamendi.jpg', 3, 1, NULL), (4, 'de_paul.jpg', 4, 1, NULL), (5, 'mac_allister.jpg', 5, 1, NULL), (6, 'messi.jpg', 6, 1, NULL),
+(1, 'emiliano_martinez.jpg', 1, 1, 0), (2, 'cristian_romero.jpg', 2, 1, 0), (3, 'otamendi.jpg', 3, 1, 0), (4, 'de_paul.jpg', 4, 1, 0), (5, 'mac_allister.jpg', 5, 1, 0), (6, 'messi.jpg', 6, 1, 0),
 -- España
-(7, 'unai_simon.jpg', 7, 2, NULL), (8, 'le_normand.jpg', 8, 2, NULL), (9, 'rodri.jpg', 9, 2, NULL), (10, 'pedri.jpg', 10, 2, NULL), (11, 'lamine_yamal.jpg', 11, 2, NULL), (12, 'oyarzabal.jpg', 12, 2, NULL),
+(7, 'unai_simon.jpg', 7, 2, 0), (8, 'le_normand.jpg', 8, 2, 0), (9, 'rodri.jpg', 9, 2, 0), (10, 'pedri.jpg', 10, 2, 0), (11, 'lamine_yamal.jpg', 11, 2, 0), (12, 'oyarzabal.jpg', 12, 2, 0),
 -- Alemania
-(13, 'neuer.jpg', 13, 3, NULL), (14, 'rudiger.jpg', 14, 3, NULL), (15, 'kimmich.jpg', 15, 3, NULL), (16, 'wirtz.jpg', 16, 3, NULL), (17, 'musiala.jpg', 17, 3, NULL), (18, 'havertz.jpg', 18, 3, NULL),
+(13, 'neuer.jpg', 13, 3, 0), (14, 'rudiger.jpg', 14, 3, 0), (15, 'kimmich.jpg', 15, 3, 0), (16, 'wirtz.jpg', 16, 3, 0), (17, 'musiala.jpg', 17, 3, 0), (18, 'havertz.jpg', 18, 3, 0),
 -- Inglaterra
-(19, 'pickford.jpg', 19, 4, NULL), (20, 'guehi.jpg', 20, 4, NULL), (21, 'rice.jpg', 21, 4, NULL), (22, 'bellingham.jpg', 22, 4, NULL), (23, 'saka.jpg', 23, 4, NULL), (24, 'kane.jpg', 24, 4, NULL),
+(19, 'pickford.jpg', 19, 4, 0), (20, 'guehi.jpg', 20, 4, 0), (21, 'rice.jpg', 21, 4, 0), (22, 'bellingham.jpg', 22, 4, 0), (23, 'saka.jpg', 23, 4, 0), (24, 'kane.jpg', 24, 4, 0),
 -- Francia
-(25, 'maignan.jpg', 25, 5, NULL), (26, 'saliba.jpg', 26, 5, NULL), (27, 'tchouameni.jpg', 27, 5, NULL), (28, 'rabiot.jpg', 28, 5, NULL), (29, 'dembele.jpg', 29, 5, NULL), (30, 'mbappe.jpg', 30, 5, NULL),
+(25, 'maignan.jpg', 25, 5, 0), (26, 'saliba.jpg', 26, 5, 0), (27, 'tchouameni.jpg', 27, 5, 0), (28, 'rabiot.jpg', 28, 5, 0), (29, 'dembele.jpg', 29, 5, 0), (30, 'mbappe.jpg', 30, 5, 0),
 -- Uruguay
-(31, 'rochet.jpg', 31, 6, NULL), (32, 'araujo.jpg', 32, 6, NULL), (33, 'valverde.jpg', 33, 6, NULL), (34, 'ugarte.jpg', 34, 6, NULL), (35, 'darwin.jpg', 35, 6, NULL), (36, 'nandez.jpg', 36, 6, NULL),
+(31, 'rochet.jpg', 31, 6, 0), (32, 'araujo.jpg', 32, 6, 0), (33, 'valverde.jpg', 33, 6, 0), (34, 'ugarte.jpg', 34, 6, 0), (35, 'darwin.jpg', 35, 6, 0), (36, 'nandez.jpg', 36, 6, 0),
 -- Portugal
-(37, 'diogo_costa.jpg', 37, 7, NULL), (38, 'ruben_dias.jpg', 38, 7, NULL), (39, 'bruno_fernandes.jpg', 39, 7, NULL), (40, 'vitinha.jpg', 40, 7, NULL), (41, 'rafael_leao.jpg', 41, 7, NULL), (42, 'cristiano_ronaldo.jpg', 42, 7, NULL),
+(37, 'diogo_costa.jpg', 37, 7, 0), (38, 'ruben_dias.jpg', 38, 7, 0), (39, 'bruno_fernandes.jpg', 39, 7, 0), (40, 'vitinha.jpg', 40, 7, 0), (41, 'rafael_leao.jpg', 41, 7, 0), (42, 'cristiano_ronaldo.jpg', 42, 7, 0),
 -- Países Bajos
-(43, 'verbruggen.jpg', 43, 8, NULL), (44, 'vandijk.jpg', 44, 8, NULL), (45, 'dejong.jpg', 45, 8, NULL), (46, 'reijnders.jpg', 46, 8, NULL), (47, 'xavi_simons.jpg', 47, 8, NULL), (48, 'gakpo.jpg', 48, 8, NULL);
+(43, 'verbruggen.jpg', 43, 8, 0), (44, 'vandijk.jpg', 44, 8, 0), (45, 'dejong.jpg', 45, 8, 0), (46, 'reijnders.jpg', 46, 8, 0), (47, 'xavi_simons.jpg', 47, 8, 0), (48, 'gakpo.jpg', 48, 8, 0);
 SET IDENTITY_INSERT Figurita OFF;
 GO

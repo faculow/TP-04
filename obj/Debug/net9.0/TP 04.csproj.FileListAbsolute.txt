@@ -153,3 +153,132 @@ c:\Users\49961065\Downloads\TP04\TP-04\obj\Debug\net9.0\ref\TP 04.dll
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.dll
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\refint\TP 04.dll
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.pdb
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\appsettings.Development.json
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\appsettings.json
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\TP 04.staticwebassets.runtime.json
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\TP 04.staticwebassets.endpoints.json
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\TP 04.exe
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\TP 04.deps.json
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\TP 04.runtimeconfig.json
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\TP 04.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\TP 04.pdb
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Dapper.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Bcl.Cryptography.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\System.Diagnostics.EventLog.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\cs\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\de\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\es\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\fr\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\it\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\ja\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\ko\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\pl\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\ru\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\tr\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+Z:\2026\programacion\TP 04\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\rjimswa.dswa.cache.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\scopedcss\bundle\TP 04.styles.css
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\scopedcss\projectbundle\TP 04.bundle.scp.css
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\rtne5oafxk-b9sayid5wm.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\52r49jjt5v-61n19gt1b8.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\sourx506zx-3u8phryvc0.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\k6azbtl0pr-bqjiyaj88i.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\byaf7l8xhz-c2jlpeoesf.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\8xdbqu75jn-erw9l3u2r3.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\vgbiw1nwki-aexeepp0ev.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\uwmp2tkyoj-d7shbmvgxk.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\r0ectpw6bm-ausgxo2sd3.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\vch2284q8s-k8d9w2qqmf.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\8gx5besz41-cosvhxvwiu.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\qapmveolkf-ub07r2b239.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\9698b0e1mz-fvhpjtyr6v.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\046pouod8e-b7pk76d08c.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\axk45libse-fsbi9cje9m.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\gwmu6c6kzw-rzd6atqjts.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\fde1hsi38i-ee0r1s7dh0.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\spjjr5lrzr-dxx9fxp4il.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\s5477cyuol-jd9uben2k1.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\rolqxkwgyb-khv3u5hwcm.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\njs9mmikmz-r4e9w2rdcm.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\1s44dcpn2p-lcd1t2u6c8.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\s8z7diii6z-c2oey78nd0.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\kgznu79jin-tdbxkamptv.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\npns8p0ecd-j5mq2jizvt.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\y13nuf8l7i-06098lyss8.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\jcn91c3nut-nvvlpmu67g.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\llw400cc95-s35ty4nyc5.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\adscukb6xl-pj5nd1wqec.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\7qxaf8yyes-46ein0sx1k.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\06nt0j484z-v0zj4ognzu.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\b8h8abnz5u-37tfw0ft22.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\gsepvcwhew-hrwsygsryq.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\rxamsm0lpv-pk9g2wxc8p.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\qcr2q1nxic-ft3s53vfgj.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\dgomp9go87-6cfz1n2cew.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\y90t3wuqti-6pdc2jztkx.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\xe2kurp0v5-493y06b0oq.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\8vzto8092a-iovd86k7lj.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\d1t0up24ul-vr1egmr9el.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\yoivozclr4-kbrnm935zg.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\c1huw0meja-jj8uyg4cgr.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\woqtt6war5-y7v9cxd14o.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\t7ivq142e9-notf2xhcfb.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\xmqvd9pl5y-h1s4sie4z3.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\ypmwhkvqn9-63fj8s7r0e.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\p1u4fmytzk-0j3bgjxly4.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\4914vdv2ia-47otxtyo56.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\z9oo7xtkzb-4v8eqarkd7.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\gkoyjwdovb-356vix0kms.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\bsvkd00n21-83jwlth58m.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\w4qd2worrt-mrlpezrjn3.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\dufa2m2qca-lzl9nlhx6b.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\8wc5bq9mre-ag7o75518u.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\h7e5udrv4h-x0q3zqp4vz.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\jipysvs374-0i3buxo5is.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\y0om1xovbq-o1o13a6vjx.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\fui50phxn7-ttgo8qnofa.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\wklajgwm63-2z0ns9nrw6.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\ceghvgjyzg-muycvpuwrr.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\fv2167lq9o-87fc7y1x7t.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\xtzi7xmn8j-mlv21k5csn.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\qf0z6vck54-zg03wvcyto.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\7nw5s7flqi-zg03wvcyto.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\staticwebassets.build.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\staticwebassets.build.json.cache
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\staticwebassets.development.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.csproj.Up2Date
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.genruntimeconfig.cache
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\ref\TP 04.dll

@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using TP_04.Models;
 
@@ -32,25 +31,17 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Confirmar(List<int> pegar, List<int> repetidas)
+    public IActionResult Confirmar(List<int>? pegar)
     {
-        BD.ConfirmarFiguritas(pegar, repetidas);
+        if (pegar != null)
+        {
+            foreach (int id in pegar)
+            {
+                BD.PegarFigurita(id);
+            }
+        }
 
         return RedirectToAction("Index");
-    }
-
-    public IActionResult BaseFiguritas()
-    {
-        List<Figurita> figuritas = BD.ObtenerFiguritas();
-
-        return View(figuritas);
-    }
-
-    public IActionResult Repetidas()
-    {
-        List<Figurita> repetidas = BD.ObtenerRepetidas();
-        ViewBag.TotalRepetidas = repetidas.Sum(r => (int)r.cantidad);
-        return View(repetidas);
     }
 
     public IActionResult Privacy()

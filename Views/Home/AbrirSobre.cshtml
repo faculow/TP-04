@@ -1,48 +1,35 @@
+@model List<Figurita>
+
 @{
     ViewData["Title"] = "Abrir Sobre";
 }
 
-<h1>Abrir Sobre</h1>
+<header>
+    <h1>Abrir Sobre</h1>
+</header>
 
-<form asp-action="Confirmar" method="post">
+<main>
+    <form action="/Home/Confirmar" method="post">
 
-<div class="row">
+        <section class="layout">
+            @foreach(Figurita f in Model)
+            {
+                <div class="figurita-card">
+                    <h3>Figurita @f.IdFigurita</h3>
 
-@foreach(var f in ViewBag.Sobre)
-{
-    <div class="col-md-4">
+                    <img src="/imagenes/@f.Imagen" width="120" alt="@f.Nombre @f.Apellido">
 
-        <div class="card mb-3">
+                    <p><strong>@f.Nombre @f.Apellido</strong></p>
+                    <p>@f.Pais</p>
 
-            <img src="~/images/@f.Imagen" class="card-img-top">
+                    <input type="checkbox" name="pegar" value="@f.IdFigurita"> Pegar
+                </div>
+            }
+        </section>
 
-            <div class="card-body">
-
-                <h5>@f.Nombre</h5>
-
-                <input type="checkbox"
-                       name="pegar"
-                       value="@f.IdFigurita">
-                Pegar
-
-                <br>
-
-                <input type="checkbox"
-                       name="repetidas"
-                       value="@f.IdFigurita">
-                Repetida
-
-            </div>
-
+        <div class="acciones">
+            <input type="submit" class="btn-confirmar" value="Confirmar">
         </div>
 
-    </div>
-}
-
-</div>
-
-<input type="submit"
-       class="btn btn-success"
-       value="Confirmar">
-
-</form>
+    </form>
+</main>

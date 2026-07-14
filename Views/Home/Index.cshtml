@@ -1,85 +1,49 @@
-﻿@{
+﻿@model List<Figurita> 
+
+@{
     ViewData["Title"] = "Álbum del Mundial";
 }
 
-<h1>Álbum del Mundial</h1>
+<header>
+    <img src="/img/logo.png" width="120" alt="Logo Álbum">
 
-<p>
-    Figuritas pegadas: @ViewBag.TotalPegadas / @ViewBag.TotalFiguritas
-</p>
+    <h1>Álbum del Mundial</h1>
 
-<a class="btn btn-primary" asp-action="AbrirSobre">Abrir Sobre</a>
-<a class="btn btn-success" asp-action="BaseFiguritas">Base de Figuritas</a>
-<a class="btn btn-warning" asp-action="Repetidas">Repetidas</a>
+    <a href='@Url.Action("AbrirSobre","Home")'>
+        Abrir Sobre
+    </a>
+</header>
 
-<hr>
+<main>
+    <p>
+        Figuritas pegadas:
+        @ViewBag.TotalPegadas / @ViewBag.TotalFiguritas
+    </p>
 
-<div class="row">
+    <section class="layout">
+        @foreach(Figurita f in Model)
+        {
+            <div class="figurita-card">
+                <h3>Figurita @f.IdFigurita</h3>
+                
+                <img src="/imagenes/@f.Imagen" alt="@f.Nombre @f.Apellido">
 
-    @foreach(var f in ViewBag.Figuritas)
-    {
-        <div class="col-md-3">
-            <div class="card mb-3">
-                <img src="~/imagenes/@f.Imagen" class="card-img-top">
-                <div class="card-body">
-                    <h5>@f.Nombre</h5>
-                    <p>Id Figurita: @f.IdFigurita</p>
-                    <p>Jugador: @f.IdJugador</p>
-                    <p>País: @f.IdPais</p>
-                </div>
+                <p><strong>@f.Nombre @f.Apellido</strong></p>
+                <p>@f.Pais</p>
+
+                @if(f.Pegada)
+                {
+                    <p class="estado pegada">Pegada</p>
+                }
+                else
+                {
+                    <p class="estado falta">Falta</p>
+                }
             </div>
-        </div>
-    }
+        }
+    </section>
+</main>
 
-</div> 
-<hr> <div> 
-<img src="~/imagenes/Adrien-Rabiot.jpg" alt="Adrien Rabiot"> 
-<img src="~/imagenes/Alexis-Mac-Allister.jpg" alt="Alexis Mac Allister"> 
-<img src="~/imagenes/Antonio-Rudiger.jpg" alt="Antonio Rudiger"> 
-<img src="~/imagenes/Aurelien-Tchouameni.jpg" alt="Aurelien Tchouameni"> 
-<img src="~/imagenes/Bart-Verbruggen.jpg" alt="Bart Verbruggen"> 
-<img src="~/imagenes/Bruno-Fernandes.jpg" alt="Bruno Fernandes"> 
-<img src="~/imagenes/Bukayo-Saka.jpg" alt="Bukayo Saka">
-<img src="~/imagenes/Cody-Gakpo.jpg" alt="Cody Gakpo">
-<img src="~/imagenes/cristian_romero.jpg.png" alt="Cristian Romero">
-<img src="~/imagenes/Cristiano-Ronaldo.jpg" alt="Cristiano Ronaldo">
-<img src="~/imagenes/Darwin-Núñez.jpg" alt="Darwin Núñez">
-<img src="~/imagenes/Declan-Rice.jpg" alt="Declan Rice">
-<img src="~/imagenes/Diogo-Costa.jpg" alt="Diogo Costa">
-<img src="~/imagenes/emiliano-martienz.jpg" alt="Emiliano Martínez">
-<img src="~/imagenes/Federico-Valverde.jpg" alt="Federico Valverde">
-<img src="~/imagenes/Florian-Wirtz.jpg" alt="Florian Wirtz">
-<img src="~/imagenes/Frenkie-De-Jong.jpg" alt="Frenkie De Jong">
-<img src="~/imagenes/Harry-Kane.jpg" alt="Harry Kane">
-<img src="~/imagenes/Jamal-Musiala.jpg" alt="Jamal Musiala">
-<img src="~/imagenes/Jordan-Pickford.jpg" alt="Jordan Pickford">
-<img src="~/imagenes/Joshua-Kimmich.jpg" alt="Joshua Kimmich">
-<img src="~/imagenes/Jude-Bellingham.jpg" alt="Jude Bellingham">
-<img src="~/imagenes/Kai-Havertz.jpg" alt="Kai Havertz">
-<img src="~/imagenes/Kylian-Mbappé.jpg" alt="Kylian Mbappé">
-<img src="~/imagenes/Lamine-Yamal.jpg" alt="Lamine Yamal">
-<img src="~/imagenes/Lionel-Messi.jpg" alt="Lionel Messi">
-<img src="~/imagenes/Manuel-Neuer.jpg" alt="Manuel Neuer">
-<img src="~/imagenes/Manuel-Ugarte.jpg" alt="Manuel Ugarte">
-<img src="~/imagenes/Marc-Guehi.jpg" alt="Marc Guehi">
-<img src="~/imagenes/Mike-Maignan.jpg" alt="Mike Maignan">
-<img src="~/imagenes/Mikel-Oyarzabal.jpg" alt="Mikel Oyarzabal">
-<img src="~/imagenes/Nahitan-Nandez.jpg" alt="Nahitan Nández">
-<img src="~/imagenes/Nicolas-Otamendi.jpg" alt="Nicolás Otamendi">
-<img src="~/imagenes/Ousmane-Dembele.jpg" alt="Ousmane Dembélé">
-<img src="~/imagenes/Pedri.jpg" alt="Pedri">
-<img src="~/imagenes/Rafael-Leao.jpg" alt="Rafael Leao">
-<img src="~/imagenes/Robin-Le-Normand.jpg" alt="Robin Le Normand">
-<img src="~/imagenes/Rodri.jpg" alt="Rodri">
-<img src="~/imagenes/Rodrigo-de-Paul.jpg" alt="Rodrigo de Paul">
-<img src="~/imagenes/Ronald-Araújo.jpg" alt="Ronald Araújo">
-<img src="~/imagenes/Ruben-Dias.jpg" alt="Rúben Dias">
-<img src="~/imagenes/Sergio-Rochet.jpg" alt="Sergio Rochet">
-<img src="~/imagenes/Tijani-Reijnders.jpg" alt="Tijjani Reijnders">
-<img src="~/imagenes/Unai-Simon.jpg" alt="Unai Simón">
-<img src="~/imagenes/Virgil-Van-Dijk.jpg" alt="Virgil van Dijk">
-<img src="~/imagenes/Vitinha.jpg" alt="Vitinha">
-<img src="~/imagenes/William-Saliba.jpg" alt="William Saliba">
-<img src="~/imagenes/Xavi-Simons.jpg" alt="Xavi Simons">
-
-</div>
+<footer>
+    <p>TP Álbum del Mundial - 2026</p>
+</footer>
