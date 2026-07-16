@@ -67,6 +67,31 @@ namespace TP_04.Models
             }
         }
 
+        // --- NUEVO MÉTODO AGREGADO ---
+        public static Figurita ObtenerFiguritaPorId(int id)
+        {
+            using (SqlConnection db = new SqlConnection(_connectionString))
+            {
+                string sql = @"
+                SELECT 
+                    F.IdFigurita,
+                    F.Imagen,
+                    F.IdJugador,
+                    F.IdPais,
+                    F.Pegada,
+                    J.Nombre,
+                    J.Apellido,
+                    J.Posicion,
+                    P.Nombre AS Pais
+                FROM Figurita F
+                INNER JOIN Jugador J ON F.IdJugador = J.IdJugador
+                INNER JOIN Pais P ON F.IdPais = P.IdPais
+                WHERE F.IdFigurita = @id;";
+
+                return db.QueryFirstOrDefault<Figurita>(sql, new { id });
+            }
+        }
+
         public static void GuardarFigurita(int id)
         {
         }
@@ -88,5 +113,6 @@ namespace TP_04.Models
                     "SELECT COUNT(*) FROM Figurita");
             }
         }
+        
     }
 }

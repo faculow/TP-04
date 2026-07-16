@@ -22,7 +22,16 @@
                     <p><strong>@f.Nombre @f.Apellido</strong></p>
                     <p>@f.Pais</p>
 
-                    <input type="checkbox" name="pegar" value="@f.IdFigurita"> Pegar
+                    @if(f.Pegada)
+                    {
+                        <p class="estado repetida">Repetida</p>
+                    }
+                    else
+                    {
+                        <p>
+                            <input type="checkbox" name="pegar" value="@f.IdFigurita"> Pegar
+                        </p>
+                    }
                 </div>
             }
         </section>

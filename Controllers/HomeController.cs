@@ -31,18 +31,6 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Confirmar(List<int>? pegar)
-    {
-        if (pegar != null)
-        {
-            foreach (int id in pegar)
-            {
-                BD.PegarFigurita(id);
-            }
-        }
-
-        return RedirectToAction("Index");
-    }
 
     public IActionResult Privacy()
     {
@@ -56,5 +44,23 @@ public class HomeController : Controller
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
         });
+    }
+    public IActionResult Confirmar(List<int> pegar)
+    {
+        if (pegar != null)
+        {
+            foreach (int id in pegar)
+            {
+                Figurita f = BD.ObtenerFiguritaPorId(id);
+                if (f != null)
+                {
+                    if (!f.Pegada)
+                    {
+                        BD.PegarFigurita(id);
+                    }
+                }
+            }
+        }
+        return RedirectToAction("Index");
     }
 }
