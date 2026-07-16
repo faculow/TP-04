@@ -67,7 +67,6 @@ namespace TP_04.Models
             }
         }
 
-        // --- NUEVO MÉTODO AGREGADO ---
         public static Figurita ObtenerFiguritaPorId(int id)
         {
             using (SqlConnection db = new SqlConnection(_connectionString))
