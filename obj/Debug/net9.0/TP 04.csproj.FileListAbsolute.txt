@@ -281,4 +281,4 @@ Z:\2026\programacion\TP 04\obj\Debug\net9.0\staticwebassets.build.endpoints.json
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.csproj.Up2Date
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\TP 04.genruntimeconfig.cache
 Z:\2026\programacion\TP 04\obj\Debug\net9.0\ref\TP 04.dll
-Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\rtne5oafxk-vlki4duq08.gz
+Z:\2026\programacion\TP 04\obj\Debug\net9.0\compressed\rtne5oafxk-jberqxcbdu.gz
